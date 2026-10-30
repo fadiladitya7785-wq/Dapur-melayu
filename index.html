@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dapur Melayu Bu Sari | Masakan Khas Riau, Pekanbaru</title>
+<meta name="description" content="Gulai patin, asam pedas baung, dan kue tradisional Riau. Pesan lewat WhatsApp.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;800&family=Work+Sans:wght@400;600&display=swap">
+<style>
+:root{
+  --hijau:#1F4D3A; --hijau-muda:#E6EFE4; --emas:#E0A526; --bata:#A63D2F;
+  --kertas:#F7F9F4; --arang:#1E2620;
+  --serif:"Alegreya",Georgia,serif; --sans:"Work Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--arang);background:var(--kertas);line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--emas);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+/* motif pucuk rebung: deretan segitiga khas songket Melayu */
+.rebung{height:18px;background:
+  linear-gradient(135deg,var(--emas) 25%,transparent 25%) -9px 0,
+  linear-gradient(225deg,var(--emas) 25%,transparent 25%) -9px 0,
+  linear-gradient(315deg,var(--emas) 25%,transparent 25%),
+  linear-gradient(45deg,var(--emas) 25%,transparent 25%);
+  background-size:18px 18px;background-color:var(--hijau)}
+
+header{background:var(--hijau);color:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:12px;flex-wrap:wrap}
+nav strong{font-family:var(--serif);font-size:1.25rem}
+nav ul{display:flex;gap:18px;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:600}
+nav a:hover{color:var(--emas)}
+
+.hero{padding:48px 0 64px}
+.hero h1{font-family:var(--serif);font-weight:800;font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.05;max-width:12ch}
+.hero p{margin:18px 0 28px;max-width:46ch;font-size:1.1rem;color:#DCE8DA}
+.btn{display:inline-block;background:var(--emas);color:var(--arang);padding:14px 26px;font-weight:600;text-decoration:none;border-radius:4px}
+.btn:hover{background:#F0B93A}
+
+section{padding:56px 0}
+h2{font-family:var(--serif);font-size:2rem;color:var(--hijau);margin-bottom:8px}
+.sub{color:#4B5A4F;margin-bottom:28px;max-width:52ch}
+
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 40px}
+.item{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px dashed #B9C7B5}
+.item h3{font-family:var(--serif);font-size:1.25rem}
+.item p{font-size:.95rem;color:#4B5A4F}
+.harga{font-weight:600;color:var(--bata);white-space:nowrap}
+
+.tentang{background:var(--hijau-muda)}
+.tentang p{max-width:62ch;margin-bottom:14px}
+
+.kontak dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:20px 0 28px}
+.kontak dt{font-weight:600}
+footer{background:var(--arang);color:#B9C7B5;text-align:center;padding:22px 0;font-size:.9rem}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (max-width:520px){body{font-size:16px}.kontak dl{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <strong>Dapur Melayu Bu Sari</strong>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Gulai patin, rasa rumah Riau.</h1>
+      <p>Masakan Melayu Riau yang dimasak setiap pagi di Pekanbaru. Pesan untuk makan siang, arisan, atau acara keluarga.</p>
+      <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Bu%20Sari%2C%20saya%20mau%20pesan" target="_blank" rel="noopener">Pesan lewat WhatsApp</a>
+    </div>
+  </div>
+  <div class="rebung" aria-hidden="true"></div>
+</header>
+
+<main>
+  <section id="menu">
+    <div class="wrap">
+      <h2>Menu andalan</h2>
+      <p class="sub">Semua dimasak segar hari itu. Pesan satu hari sebelumnya untuk porsi besar.</p>
+      <div class="menu">
+        <div class="item"><div><h3>Gulai ikan patin</h3><p>Kuah kuning gurih dengan tempoyak dan rempah.</p></div><span class="harga">Rp35.000</span></div>
+        <div class="item"><div><h3>Asam pedas baung</h3><p>Ikan baung, kuah asam pedas segar.</p></div><span class="harga">Rp38.000</span></div>
+        <div class="item"><div><h3>Roti jala + kari ayam</h3><p>Roti jala lembut dengan kari kental.</p></div><span class="harga">Rp22.000</span></div>
+        <div class="item"><div><h3>Bolu kemojo</h3><p>Kue manis lembut berbentuk bunga.</p></div><span class="harga">Rp3.000 / buah</span></div>
+        <div class="item"><div><h3>Lempuk durian</h3><p>Dodol durian manis, tahan lama untuk oleh-oleh.</p></div><span class="harga">Rp30.000</span></div>
+        <div class="item"><div><h3>Otak-otak ikan</h3><p>Dibakar dalam daun, dengan sambal kacang.</p></div><span class="harga">Rp15.000</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="tentang">
+    <div class="wrap">
+      <h2>Tentang kami</h2>
+      <p>Dapur Melayu Bu Sari mulai dari dapur rumah di Pekanbaru pada 2018. Resepnya turun dari nenek, dengan ikan sungai dan rempah dari pasar lokal.</p>
+      <p>Kami percaya masakan Riau layak dikenal lebih luas, dan setiap pesanan kami kerjakan seperti untuk keluarga sendiri.</p>
+    </div>
+  </section>
+
+  <section id="kontak" class="kontak">
+    <div class="wrap">
+      <h2>Pesan dan kunjungi</h2>
+      <dl>
+        <dt>Alamat</dt><dd>Jl. Contoh No. 12, Pekanbaru, Riau</dd>
+        <dt>Jam buka</dt><dd>Setiap hari, 08.00 sampai 20.00 WIB</dd>
+        <dt>WhatsApp</dt><dd>0812-3456-7890</dd>
+      </dl>
+      <a class="btn" href="https://wa.me/6281234567890?text=Halo%20Bu%20Sari%2C%20saya%20mau%20pesan" target="_blank" rel="noopener">Pesan sekarang</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Dapur Melayu Bu Sari, Pekanbaru, Riau</div>
+</footer>
+
+</body>
+</html>
